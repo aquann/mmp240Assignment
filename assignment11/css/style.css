@@ -1,0 +1,171 @@
+/* Basic Responsive Images and Video */
+body{
+    background-image: url("https://hips.htvapps.com/htv-prod-media.s3.amazonaws.com/images/ocean-water-1479055199.jpg?crop=1.00xw:1.00xh;0,0&resize=900:*");
+    
+}
+img,video{
+  width: auto; 
+  height: auto;
+  max-width: 100%; 
+}
+/* layout */ 
+.main{
+    display:grid;
+    /*1fr (fractional column, can apply to rows as well)*/
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo logo"
+        "hero hero"
+        "title title"
+        "intro images"
+        "map description"
+        "map information";
+    
+}
+.logo{
+    grid-area: logo;
+    border-image: url("http://www.screamscape.com/assets/images/LunaParkNYC_logo.jpg");
+     
+}
+.nav{
+    grid-area: nav; 
+    padding: nav;
+    border-right-width: nav;
+}
+
+.hero{
+    grid-area: hero; 
+}
+.title{
+    grid-area: title; 
+}
+.intro{
+    grid-area: intro; 
+    font-family:cursive;
+    text-align: center;
+    font-size: 2em;
+}
+.images{
+    grid-area: images; 
+}
+.description{
+    grid-area: description;
+    font-family: fantasy;
+    text-align: center;
+    font-size: larger;
+}
+.map{
+    grid-area: map; 
+}
+.information{
+    grid-area: information;
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+.footer{
+    grid-area: footer; 
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+bottom: 0px;
+width: 100%;
+text-align: center;
+font-family:cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+
+/*
+canvas { 
+    margin: 0 auto;
+    display: block;
+}
+
+#home {
+    background-color:tan;
+    font-family:sans-serif;
+}
+ul {
+    padding:0;
+}
+.link {
+    font-size: 2em;
+    padding: 0.25em 0;
+        margin-right: 0.5em;
+    display:inline;
+}
+a { color: red;
+}
+a:hover {
+    color: deeppink;
+}
+li a {
+    color: skyblue;
+    transition: color 500ms;
+}
+
+#home a {
+    text-decoration: none;
+    border-top: 1px dotted blue;
+}
+
+img {
+    width:100%;
+    transition: width 1s;
+}
+omg:hover {
+    width:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+*/
+
+/* Change the link color to #111 (black) on hover */
+/*
+li a:hover {
+    background-color: #111;
+}
+*/
+
