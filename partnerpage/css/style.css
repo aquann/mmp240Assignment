@@ -25,7 +25,7 @@ img,video{
 }
 .logo{
     grid-area: logo;
-    border-image: url("http://www.screamscape.com/assets/images/LunaParkNYC_logo.jpg");
+    /*background-image: url(http://www.screamscape.com/assets/images/LunaParkNYC_logo.jpg);*/
      
 }
 .nav{
@@ -79,6 +79,7 @@ font-family:cursive;
 }
 
 ul {
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -87,7 +88,7 @@ ul {
 }
 
 li {
-    float: center;
+    float: right;
 }
 
 li a {
