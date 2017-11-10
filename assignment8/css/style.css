@@ -10,12 +10,23 @@ img,video{
     /*1fr (fractional column, can apply to rows as well)*/
     
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
+        "logo logo"
         "hero hero"
         "title title"
         "intro images"
         "map description"
         "map information";
+    
+}
+.logo{
+    grid-area: logo;
+     
+}
+.nav{
+    grid-area: nav; 
+    padding: nav;
+    border-right-width: nav;
 }
 .hero{
     grid-area: hero; 
@@ -38,6 +49,18 @@ img,video{
 .information{
     grid-area: information; 
 }
+.footer{
+    grid-area: footer; 
+}
+
+footer {
+bottom: 0px;
+width: 100%;
+text-align: center;
+}
+<footer align="center">
+
+
 /*
 canvas { 
     margin: 0 auto;
