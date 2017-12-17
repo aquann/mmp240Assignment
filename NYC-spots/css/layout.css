@@ -1,0 +1,76 @@
+
+
+.homePage .place{
+    float: left;
+    width: 50%;
+    padding-bottom: 3em
+}
+
+.homePage .googleMap{
+    clear: both;
+}
+
+@supports (grid-area: auto) {
+
+    @media (min-width: 600px) {
+        .homePage .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            grid-template-areas:
+                "hero hero"
+                "title title"
+                "text places"
+                "map places";
+
+        }
+    }
+        
+        @media (min-width: 900px){
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+}
+
+        
+         @media (min-width: 1200px){
+            display:grid
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+
+
+
+        .homePage .hero{
+            grid-area: hero;
+        }
+
+        .homePage .title{
+            grid-area: title;
+        }
+
+        .homePage .text{
+            grid-area: text;
+        }
+
+        .homePage .places{
+            grid-area: places;
+        }
+
+        .homePage .googleMap{
+            grid-area: map;
+        }
+
+        .homePage .place{
+            float: none;
+            width: auto;
+            padding-bottom: 3em;
+        }
+  }
+
+    @media (min-width: 900px) {
+
+    }
+
+
+}
+/*end @supports*/

@@ -1,0 +1,235 @@
+/* Basic Responsive Images and Video */
+body{
+/*    background-image: url("http://1069thefox.com/wp-content/blogs.dir/8/files/2015/02/city.jpg");*/
+
+}
+
+/* This is to have a retainer for you vids and imgs */
+img,video{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* layout */
+.placepage .main{
+    display: grid;
+/*    1fr (fractional column, can apply to rows as well)*/
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+/*
+        "logo logo"
+        "hero hero"
+        "title title"
+*/
+        "intro images"
+        "map description"
+        "map information";
+
+}
+
+.home .main{
+    display:grid;
+/*    1fr (fractional column, can apply to rows as well)*/
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "intro images"
+        "map description"
+        "map information";
+
+}
+
+.hero image {
+    display: inline-block;
+    width: 100px;
+}
+
+.title {
+    display: inline-block;
+    width: 100px;
+}
+
+.text {
+    display: inline-block;
+    width: 100px;
+}
+
+
+
+.logo{
+    grid-area: logo;
+    float right: logo;
+
+}
+.nav{
+    grid-area: nav;
+    padding: nav;
+    border-right-width: nav;
+}
+
+.hero{
+    grid-area: hero;
+}
+.title{
+    grid-area: title;
+}
+.intro{
+    grid-area: intro;
+    font-family:cursive;
+    text-align: center;
+    font-size: 2em;
+}
+.images{
+    grid-area: images;
+}
+.description{
+    grid-area: description;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 2em;
+}
+.map{
+    grid-area: map;
+}
+.information{
+    grid-area: information;
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+.footer{
+    grid-area: footer;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+bottom: 0px;
+width: 100%;
+text-align: center;
+font-family:cursive;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+
+/*
+canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+#home {
+    background-color:tan;
+    font-family:sans-serif;
+}
+ul {
+    padding:0;
+}
+.link {
+    font-size: 2em;
+    padding: 0.25em 0;
+        margin-right: 0.5em;
+    display:inline;
+}
+a { color: red;
+}
+a:hover {
+    color: deeppink;
+}
+li a {
+    color: skyblue;
+    transition: color 500ms;
+}
+
+#home a {
+    text-decoration: none;
+    border-top: 1px dotted blue;
+}
+
+img {
+    width:100%;
+    transition: width 1s;
+}
+omg:hover {
+    width:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+*/
+
+/* Change the link color to #111 (black) on hover */
+/*
+li a:hover {
+    background-color: #111;
+}
+*/
+
+
+
+    .home .main{
+/*        stle your page for mobile*/
+    }
+
+    @supports (grid-area: auto){
+
+        @media (min-width: 600px){
+/*            Do the grid styling for this screen size*/
+        }
+
+
+        @media (min-width: 900px){
+/*            change the grid again for thi sie*/
+        }
+
+
+
+    }/*end @supports*/
+
+
+
+
+
+
+
+
